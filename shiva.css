@@ -1,0 +1,298 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff;
+  }
+  
+  .about-section {
+    padding: 80px 40px; /* Increased top-bottom padding */
+    border-top: 8px solid orange;
+    border-bottom: 8px solid orange;
+    border-left: 8px solid orange;
+    border-right: 8px solid orange;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px; /* Added internal padding */
+  }
+  
+  .left {
+    flex: 1;
+    padding: 30px; /* Increased padding */
+    text-align: center;
+  }
+  
+  .image-frame {
+    border: 4px solid orange;
+    padding: 14px;
+    display: inline-block;
+    
+  }
+  
+  .image-frame img {
+    max-width: 100%;
+    height: 565px;
+  }
+  
+  .right {
+    flex: 1.2;
+    padding: 30px; /* Increased padding */
+  }
+  
+  .right h5 {
+    margin: 0;
+    font-size: 14px;
+    color: gray;
+  }
+  
+  .right h2 {
+    color: orange;
+    font-size: 30px;
+    margin: 12px 0;
+  }
+  
+  .right p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #333;
+  }
+  
+  .info {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0;
+  }
+  
+  .info li {
+    margin: 8px 0;
+    font-size: 16px;
+  }
+  
+  .expertise h4 {
+    margin-bottom: 12px;
+    font-size: 19px;
+  }
+  
+  .skills span {
+    display: inline-block;
+    background: #f5f5f5;
+    color: #333;
+    padding: 10px 16px;
+    margin: 6px;
+    border-radius: 20px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+  }
+  
+  .para1 {
+    font-size: 50px;
+    text-align: center;
+    font-weight: 650;
+    background-image: url(./Screenshot\ 2025-04-20\ 2.43.46\ PM.png);
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    line-height: 70px;
+    margin: 0;
+  }
+  
+  .para2 {
+    font-size: 50px;
+    text-align: center;
+    font-weight: 650;
+    background-image: url(./Screenshot\ 2025-04-20\ 2.43.46\ PM.png);
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    line-height: 60px;
+    margin: 0;
+  }
+  
+/* BASE STYLES — for desktops/laptops */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff;
+}
+
+.about-section {
+  padding: 80px 40px;
+  border: 8px solid orange;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px;
+}
+
+.left {
+  flex: 1;
+  padding: 30px;
+  text-align: center;
+}
+
+.image-frame {
+  border: 4px solid orange;
+  padding: 14px;
+  display: inline-block;
+}
+
+.image-frame img {
+  max-width: 100%;
+  height: 565px;
+}
+
+.right {
+  flex: 1.2;
+  padding: 30px;
+}
+
+.right h5 {
+  margin: 0;
+  font-size: 14px;
+  color: gray;
+}
+
+.right h2 {
+  color: orange;
+  font-size: 30px;
+  margin: 12px 0;
+}
+
+.right p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #333;
+}
+
+.info {
+  list-style: none;
+  padding: 0;
+  margin: 25px 0;
+}
+
+.info li {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.expertise h4 {
+  margin-bottom: 12px;
+  font-size: 19px;
+}
+
+.skills span {
+  display: inline-block;
+  background: #f5f5f5;
+  color: #333;
+  padding: 10px 16px;
+  margin: 6px;
+  border-radius: 20px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+}
+
+.para1,
+.para2 {
+  font-size: 50px;
+  text-align: center;
+  font-weight: 650;
+  background-image: url(./Screenshot\ 2025-04-20\ 2.43.46\ PM.png);
+  background-size: cover;
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  line-height: 70px;
+  margin: 0;
+}
+
+/* TABLET SCREENS (≤ 992px) */
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .left,
+  .right {
+    padding: 20px;
+  }
+
+  .image-frame img {
+    height: auto;
+    max-width: 100%;
+    max-height: 400px;
+  }
+
+  .right h2 {
+    font-size: 26px;
+  }
+
+  .right p {
+    font-size: 16px;
+  }
+
+  .para1,
+  .para2 {
+    font-size: 40px;
+    line-height: 50px;
+    padding: 0 10px;
+  }
+}
+
+/* MOBILE SCREENS (≤ 576px) */
+@media (max-width: 576px) {
+  .about-section {
+    padding: 50px 15px;
+    border-width: 4px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  .right h2 {
+    font-size: 22px;
+  }
+
+  .right p,
+  .info li {
+    font-size: 15px;
+  }
+
+  .skills span {
+    font-size: 13px;
+    padding: 8px 14px;
+  }
+
+  .para1,
+  .para2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .image-frame {
+    padding: 10px;
+  }
+
+  .image-frame img {
+    max-height: 280px;
+  }
+}
