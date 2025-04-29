@@ -159,7 +159,7 @@ section .hero-text2 {
     background-color: red;
     margin-top: 120px;
     margin-bottom: 4%;
-    background-image: url(./texture.png);
+    background-image: url(./texture.webp);
     background-size: cover;
     background-position: center;
 }
