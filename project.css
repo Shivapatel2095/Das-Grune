@@ -455,7 +455,7 @@ footer h2{
 }  
   
 /* 🌐 Responsive styles */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .rating-box {
     height: auto;
     padding: 30px 0;
