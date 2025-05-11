@@ -1,15 +1,25 @@
 const form = document.getElementById("form");
 
-form.addEventListener("submit", function(e) {
-  e.preventDefault(); // Stop form from submitting normally
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
 
-  const isConfirmed = confirm("Are you sure you want to submit the form?");
+  const username = document.querySelector(".inputName").value;
+  const email = document.querySelector(".inputEmail").value;
 
-  if (isConfirmed) {
-    alert("Form has been submitted successfully!");
-    form.reset(); // Optionally clear the form
-  } else {
-    alert("Your form has been cancelled successfully!");
-    form.reset(); // Clear the form
-  }
+  fetch("/submit-form", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ username, email }),
+  })
+    .then((res) => res.json())
+    .then((data) => {
+      alert(data.message);
+      form.reset();
+    })
+    .catch((err) => {
+      alert("Something went wrong. Please try again.");
+      console.error(err);
+    });
 });
