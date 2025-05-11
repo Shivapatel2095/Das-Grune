@@ -17,10 +17,5 @@
     "url": "https://github.com/Shivapatel2095/Das-Grune/issues"
   },
   "homepage": "https://github.com/Shivapatel2095/Das-Grune#readme",
-  "description": "",
-  "dependencies": {
-    "body-parser": "^2.2.0",
-    "cors": "^2.8.5",
-    "express": "^5.1.0"
-  }
+  "description": ""
 }
